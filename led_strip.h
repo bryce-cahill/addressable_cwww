@@ -13,7 +13,7 @@
 #include <esp_err.h>
 
 namespace esphome {
-namespace esp32_rmt_led_strip {
+namespace addressable_cwww {
 
 enum RGBOrder : uint8_t {
     ORDER_RGB,
@@ -88,7 +88,7 @@ protected:
     optional<uint32_t> max_refresh_rate_{};
 };
 
-} // namespace esp32_rmt_led_strip
+} // namespace addressable_cwww
 } // namespace esphome
 
 #endif // USE_ESP32

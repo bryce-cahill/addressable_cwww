@@ -9,9 +9,9 @@
 #include <esp_attr.h>
 
 namespace esphome {
-namespace esp32_rmt_led_strip {
+namespace addressable_cwww {
 
-static const char* const TAG = "esp32_rmt_led_strip";
+static const char* const TAG = "addressable_cwww";
 
 static const uint32_t RMT_CLK_FREQ = 80000000;
 
@@ -225,7 +225,7 @@ float ESP32RMTLEDStripLightOutput::get_setup_priority() const
     return setup_priority::HARDWARE;
 }
 
-} // namespace esp32_rmt_led_strip
+} // namespace addressable_cwww
 } // namespace esphome
 
 #endif // USE_ESP32

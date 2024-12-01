@@ -18,14 +18,14 @@ from esphome.const import (
 CODEOWNERS = ["@jesserockz"]
 DEPENDENCIES = ["esp32"]
 
-esp32_rmt_led_strip_ns = cg.esphome_ns.namespace("esp32_rmt_led_strip")
-ESP32RMTLEDStripLightOutput = esp32_rmt_led_strip_ns.class_(
+addressable_cwww_ns = cg.esphome_ns.namespace("addressable_cwww")
+ESP32RMTLEDStripLightOutput = addressable_cwww_ns.class_(
     "ESP32RMTLEDStripLightOutput", light.AddressableLight
 )
 
 rmt_channel_t = cg.global_ns.enum("rmt_channel_t")
 
-RGBOrder = esp32_rmt_led_strip_ns.enum("RGBOrder")
+RGBOrder = addressable_cwww_ns.enum("RGBOrder")
 
 RGB_ORDERS = {
     "RGB": RGBOrder.ORDER_RGB,
